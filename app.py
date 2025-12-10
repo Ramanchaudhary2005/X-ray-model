@@ -406,7 +406,7 @@ def main():
     elif page == "🔧 Dataset Preprocessing":
         st.header("Dataset Preprocessing")
         st.markdown("---")
-        st.markdown("**Unit I: Data Preprocessing**")
+        st.markdown("**Data Preprocessing**")
         
         st.markdown("### Preprocessing Steps")
         
@@ -611,7 +611,7 @@ img = img.astype('float32') / 255.0         # Normalize
     elif page == "📈 Regression Models":
         st.header("Regression Models")
         st.markdown("---")
-        st.markdown("**Unit II: Supervised Learning - Regression**")
+        st.markdown("**Supervised Learning - Regression**")
         
         st.info("""
         **Note:** This project focuses on classification, but we'll demonstrate regression models 
@@ -817,7 +817,7 @@ model.fit(X_poly, y_train)
     elif page == "🎯 Classification Models":
         st.header("Classification Models")
         st.markdown("---")
-        st.markdown("**Unit III: Supervised Learning - Classification**")
+        st.markdown("**Supervised Learning - Classification**")
         
         if dataset_info:
             with st.spinner("Preparing classification data..."):
@@ -1285,12 +1285,12 @@ def create_cnn_model(input_shape, num_classes):
         st.subheader("📚 Syllabus Coverage")
         
         syllabus_tab1, syllabus_tab2, syllabus_tab3, syllabus_tab4 = st.tabs(
-            ["Unit I", "Unit III", "Unit V", "Unit VI"]
+            ["Introduction", "Classification", "Dimensionality Reduction", "Model Performance"]
         )
         
         with syllabus_tab1:
             st.markdown("""
-            **Unit I: Introduction and Data Preparation**
+            **Introduction and Data Preparation**
             
             ✅ **Data Preprocessing:**
             - Image loading and format conversion
@@ -1303,7 +1303,7 @@ def create_cnn_model(input_shape, num_classes):
         
         with syllabus_tab2:
             st.markdown("""
-            **Unit III: Supervised Learning - Classification**
+            **Supervised Learning - Classification**
             
             ✅ **Classification Models:**
             - Convolutional Neural Networks (CNN) - Primary
@@ -1322,7 +1322,7 @@ def create_cnn_model(input_shape, num_classes):
         
         with syllabus_tab3:
             st.markdown("""
-            **Unit V: Dimensionality Reduction and Neural Networks**
+            **Dimensionality Reduction and Neural Networks**
             
             ✅ **Neural Networks:**
             - Convolutional Neural Networks (CNN)
@@ -1337,7 +1337,7 @@ def create_cnn_model(input_shape, num_classes):
         
         with syllabus_tab4:
             st.markdown("""
-            **Unit VI: Model Performance**
+            **Model Performance**
             
             ✅ **Bias-Variance Trade-off:**
             - Dropout layers for regularization
@@ -1388,7 +1388,7 @@ def create_cnn_model(input_shape, num_classes):
     elif page == "📈 Evaluation Metrics":
         st.header("Model Evaluation Metrics")
         st.markdown("---")
-        st.markdown("**Unit III & Unit VI: Model Performance Evaluation**")
+        st.markdown("**Model Performance Evaluation**")
         
         # Check if model exists
         if model is not None:
