@@ -124,7 +124,6 @@ def load_sample_images_for_analysis(n_samples=100):
 
 def preprocess_image(image):
     """
-    Unit I: Data Preprocessing
     Preprocess uploaded image for prediction
     """
     # Convert PIL to numpy array
@@ -162,9 +161,7 @@ def main():
             "🔧 Dataset Preprocessing",
             "📈 Regression Models",
             "🎯 Classification Models",
-            "⚖️ Model Comparison",
-            "📋 Model Information",
-            "📉 Evaluation Metrics"
+            "⚖️ Model Comparison"
         ]
     )
     

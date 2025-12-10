@@ -1,0 +1,59 @@
+I want to create a brain MRI classification project similar to my X-ray disease classification project. 
+
+PROJECT REQUIREMENTS:
+1. Classify brain MRI images into categories: Normal, Brain Tumor, Stroke (adjust based on your dataset)
+2. Use the same structure and functionality as the X-ray project
+3. Cover the same syllabus units (I, III, V, VI)
+4. Include Streamlit app with all navigation pages:
+   - Predict Condition
+   - Dataset Overview
+   - Dataset Preprocessing
+   - Regression Models
+   - Classification Models
+   - Model Comparison
+   - Model Information
+   - Evaluation Metrics
+5. Include regression models, classification models, and model comparison with graphs
+6. Include dataset overview, preprocessing visualizations, and evaluation metrics
+
+MY DATASET STRUCTURE:
+- train_images/ folder with MRI images
+- test_images/ folder with MRI images  
+- labels_train.csv with file_name and class_id columns
+
+CLASSES:
+- 0: Normal
+- 1: Brain Tumor
+- 2: Stroke
+(Adjust based on your dataset)
+
+KEY CHANGES NEEDED:
+1. Replace all "X-ray" references with "Brain MRI"
+2. Replace "disease" with "condition" where appropriate
+3. Update class names from ['Normal', 'Pneumonia', 'COVID-19'] to ['Normal', 'Brain Tumor', 'Stroke']
+4. Update app headers from "X-ray Disease Classification" to "Brain MRI Classification"
+5. Update file uploader text from "X-ray image" to "brain MRI image"
+6. Update IMG_SIZE if needed (256 is common for MRI, or keep 224)
+7. Handle grayscale MRI images (convert to RGB if needed)
+8. Update all documentation and descriptions
+9. Update README.md with brain MRI project information
+10. Keep all functionality, graphs, visualizations, and syllabus coverage the same
+
+FILES TO UPDATE:
+- train_model.py: Update CLASS_NAMES, print statements, image preprocessing
+- app.py: Update all headers, titles, descriptions, class names
+- README.md: Update title, description, dataset info, class labels
+- check_dataset.py: Update print statements
+- predict_example.py: Update function names and descriptions
+- SYLLABUS_MAPPING.md: Update examples to mention MRI
+
+Please adapt all the code from the X-ray project to work with brain MRI images, maintaining:
+- Same project structure
+- Same functionality and features
+- Same graphs and visualizations
+- Same syllabus coverage
+- Same evaluation metrics
+- Same navigation structure
+
+Only change the medical imaging context from X-ray to Brain MRI.
+
